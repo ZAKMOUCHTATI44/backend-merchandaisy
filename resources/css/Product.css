@@ -1,0 +1,37 @@
+.itemProduct {
+    background-color: #f6f6f6;
+    transition: all 0.3s ease-in-out;
+}
+.itemProduct .back{
+    display: none !important;
+}
+
+.itemProduct .add-to-cart{
+    visibility: hidden !important;
+}
+.itemProductFront:hover {
+    background-color: #fff;
+    border: 1px solid #000;
+    padding-inline: 20px;
+}
+.itemProductFront:hover .add-to-cart {
+    visibility: visible !important;
+    animation: FadeIn 0.5s;
+}
+.itemProductFront:hover .img-product img {
+    transform: scale(1.08);
+}
+.itemProduct .back{
+    display: flex !important;
+    animation: FadeIn 0.5s;
+}
+
+@keyframes FadeIn {
+    0%{
+        opacity: 0.1;
+    }
+    100%{
+        opacity: 1;
+    }
+
+}
